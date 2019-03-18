@@ -12,13 +12,15 @@ public class CarApp {
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("CarConfig.xml");
 		
-		Car myBelovedCar = context.getBean("myBelovedCar", TruckCar.class);
+		// Injecting object and its dependency via constructor from XML file
+		Car myBelovedCar = context.getBean("myBelovedCar", Car.class);
 		
 		myBelovedCar.getDailyFuelIntake();
 		
-		System.out.println(myBelovedCar);
+		System.out.println(myBelovedCar.getDestinationService().getDestination());
 		
-		Car myFiesta = context.getBean("myFordFiesta", HatchbackCar.class);
+		// Injecting property values from XML file
+		Car myFiesta = context.getBean("myFordFiesta", Car.class);
 		
 		System.out.println(myFiesta);
 		

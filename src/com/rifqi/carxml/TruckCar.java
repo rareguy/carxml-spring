@@ -7,13 +7,9 @@ public class TruckCar implements Car {
 	public TruckCar(DestinationService destinationService) {
 		this.destinationService = destinationService;
 	}
-	
-	
 
 	public TruckCar() {
 	}
-
-
 
 	public DestinationService getDestinationService() {
 		return destinationService;
