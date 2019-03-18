@@ -19,9 +19,9 @@ public class CarApp {
 		
 		System.out.println(myBelovedCar.getDestinationService().getDestination());
 		
-		// Injecting property values from XML file
+		// Injecting property values from XML file (Hatchback Car)
 		Car myFiesta = context.getBean("myFordFiesta", Car.class);
-		
+		// Without adding values, myFiesta already filled with values from the XML file
 		System.out.println(myFiesta);
 		
 		context.close();
