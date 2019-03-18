@@ -1,6 +1,6 @@
 # Spring Framework: XML Implementation
 
-This is a repository for a Java project that used Spring Framework. In this project I implemented XML configuration, which is an Inverse of Control implementation on Spring.
+This is a repository for a Java project that used Spring Framework. In this project I implemented an XML configuration.
 This was done for assignment of Framework-based Programming course.
 
 Here are several useful links to use Spring Framework
